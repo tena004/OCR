@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.OCR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPrices"
+        android:layout_width="361dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="184dp"
+        android:text="Read prices"
+        android:textSize="24sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBanknotes"
+        android:layout_width="361dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/scan_banknotes"
+        android:textSize="24sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrices" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="184dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="128dp"
+        android:text="Settings"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnInstruc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBanknotes" />
+
+    <Button
+        android:id="@+id/btnInstruc"
+        android:layout_width="184dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="128dp"
+        android:text="Instructions"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btnBanknotes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
